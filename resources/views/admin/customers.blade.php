@@ -345,9 +345,11 @@
                   </thead>
                   
                   <tbody>
+                    <?php $i=1?>
                     @foreach ($customers as $c => $data)
+                    
                     <tr>
-                      <td>1</td>
+                      <td>{{$i}}</td>
                       <td>{{$data->name}}</td>
                       <td>{{$data->role}}</td>
                       <td>{{$data->college}}</td>
@@ -355,6 +357,7 @@
                       <td>{{$data->email}}</td>
                       <td>{{$data->created_at}}</td>
                       <td>{{$data->updated_at}}</td>
+                      <?php $i=$i+1?>
                     </tr>                        
                     @endforeach                    
                   </tbody>

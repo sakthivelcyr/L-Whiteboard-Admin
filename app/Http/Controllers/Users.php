@@ -20,7 +20,6 @@ class Users extends Controller
     function customer()
     {
         $data = DB::table('customer')->get();
-        return view('admin.customers', ['customers' => $data]);
-        //echo $data;
+        return view('admin.customers', ['customers' => $data]);        
     }
 }

@@ -36,3 +36,4 @@ Route::get('logout', function () {
     session()->forget('data');
     return redirect('/login');
 });
+
